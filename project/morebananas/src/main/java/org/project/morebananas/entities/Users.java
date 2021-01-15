@@ -16,14 +16,16 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import lombok.Data;
 import lombok.NonNull;
 
 
+@Data
 @Entity
 @Table(name = "users")
 public class Users implements Serializable{
 
-        @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "userId")
     private Integer userId;
