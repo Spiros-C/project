@@ -10,7 +10,7 @@ public interface IUsersDao {
 	List<Users> findAllUsers();
 	
 	void save(Users user);
-	
-	void deleteByUserId(int userId);
-    
+	//	void booleanUpdate(Users user);
+	void deleteUserByUserId(int userId);
+        boolean booleanDeleteUserByUserId(int userId);
 }

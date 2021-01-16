@@ -10,7 +10,9 @@ public interface IUsersService {
     
     void saveUser(Users user);
     void updateUser(Users user);
+    boolean booleanUpdate(Users user);
     void deleteUserByUserId(int userId);
+    boolean booleanDeleteUserByUserId(int userId);
     
     
 }

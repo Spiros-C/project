@@ -9,6 +9,6 @@ public interface IUserProfileDao {
 
 	UserProfile findByType(String type);
 	
-	List<UserProfile> findAll();
+	List<UserProfile> findAllUserProfiles();
     
 }
